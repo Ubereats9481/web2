@@ -1,0 +1,52 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.error_message {
+    order: 1;
+}
+
+.robot_block {
+    order: 2;
+    margin-left: 20px;
+}
+
+.mes, .robot{
+    vertical-align: top;
+}
+
+.mes{
+    margin-top: 20px;
+}
+
+.robot{
+    margin-top: 20px;
+}
+
+#sorry{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    color: #1967d2;
+    font-size: large;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .error_message {
+        order: 1;
+    }
+
+    .robot_block {
+        order: 2;
+    }
+}
